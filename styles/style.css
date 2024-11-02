@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  color: black;
+  background: white;
+}
+
+.header {}
+
+.logo-link {}
+
+.nav {}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {}
+
+/*Главная*/
+.menu-link {}
+
+.menu-item {}
+
+/*О Седоне*/
+.menu-link {}
+
+.menu-item {}
+
+/*Гостиницы*/
+.menu-link {}
+
+.user-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-menu-item {}
+
+.user-menu-link {}
+
+/*Поиск по сайту*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.user-menu-item {}
+
+.user-menu-link {}
+
+/*Избранное*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*12*/
+.fav-namber {}
+
+.user-menu-item {}
+
+/*Хочу сюда!*/
+.user-menu-link {}
+
+.main-index {}
+
+/*Неофициальный сайт города Седона*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.welcome {}
+
+/*Приглашение посетить туристический город*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.welcome-image {}
+
+.advanteges {}
+
+/*Причины посетить город*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Седона-небольшой городок в Аризоне, заслуживающий большего*/
+.advanteges-text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!*/
+.advanteges-text {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advanteges-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advanteges-item advanteges-item-wide {}
+
+/*Настоящий городок*/
+.advanteges-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Седона — не аттракцион для туристов, там течёт своя жизнь*/
+.advanteges-discription {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advanteges-img {}
+
+.advanteges-item {}
+
+/*Небольшая площадь*/
+.advanteges-title {}
+
+/*Все достопримечательности находятся очень близко*/
+.advanteges-discription {}
+
+.advanteges-item {}
+
+/*Красивая дорога*/
+.advanteges-title {}
+
+/*Ехать в Седону из Лас-Вегаса совсем не скучно!*/
+.advanteges-discription {}
+
+.advanteges-item {}
+
+/*Мало туристов*/
+.advanteges-title {}
+
+/*Большинство едет в Гранд Каньон и толпится там*/
+.advanteges-discription {}
+
+.advanteges-item advanteges-item-wide {}
+
+/*Там есть мост дьявола*/
+.advanteges-title {}
+
+/*Да, по нему можно пройти! Если вы осмелитесь, разумеется*/
+.advanteges-discription {}
+
+.advanteges-img {}
+
+.infrastructure {}
+
+/*Инфраструктура*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Приезжайте в Седону отдохнуть в комфорте и уюте!*/
+.infrastructure-lead {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Опытный персонал и качественное обслуживание!*/
+.infrastructure-lead {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infrastructure-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infrastructure-item {}
+
+/*Жильё*/
+.infrastructure-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Рекомендуем пожить в настоящем мотеле, всё как в кино!*/
+.infrastructure-description {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.infrastructure-item {}
+
+/*Еда*/
+.infrastructure-title {}
+
+.infrastructure-description {}
+
+.infrastructure-item {}
+
+/*Сувениры*/
+.infrastructure-title {}
+
+/*Не только китайского, но и настоящего местного производства!*/
+.infrastructure-description {}
+
+.search {}
+
+/*Заинтересовались?*/
+.search-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне*/
+.search-description {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*ПОИСК ГОСТИНИЦЫ В СЕДОНЕ*/
+.search-button {}
+
+.subscribe subscribe-theme-custom {}
+
+/*ПОДПИШИСЬ НА РАССЫЛКУ*/
+.subscribe-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Только полезная информация и никакого спама, честное бойскаутское!*/
+.subscribe-title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subscribe-form {}
+
+.subscribe-form-name {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*Ваш e-mail*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Подписаться*/
+.subscribe-button {}
+
+footer {}
+
+.footer-social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-item {}
+
+.footer-social-link {}
+
+/*ВКонтакте*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-social-item {}
+
+.footer-social-link {}
+
+/*Telegram*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-social-item {}
+
+.footer-social-link {}
+
+/*YouTube*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.footer-phone {}
+
+.copyright {}
+
+.htmlacademy-logo {}
