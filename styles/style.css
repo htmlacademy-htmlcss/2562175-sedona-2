@@ -18,8 +18,15 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  color: black;
-  background: white;
+  color: #000000;
+  background: #f2f2f2;
+}
+
+.conteiner {
+  width: 1200px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .header {}
@@ -118,7 +125,13 @@ body {
   overflow: hidden;
 }
 
-.welcome {}
+.welcome {
+  background-image: url(../images/divider.svg), url(../images/background-images.jpg);
+  padding-top: 51px;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+}
 
 /*Приглашение посетить туристический город*/
 .visually-hidden {
@@ -135,7 +148,10 @@ body {
   overflow: hidden;
 }
 
-.welcome-image {}
+.welcome-image {
+  display: block;
+  margin: 0 auto;
+}
 
 .advanteges {}
 
