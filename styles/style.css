@@ -131,6 +131,8 @@ body {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
+  width: 1200px;
+  height: 485px;
 }
 
 /*Приглашение посетить туристический город*/
