@@ -126,7 +126,7 @@ body {
 }
 
 .welcome {
-  background-image: url(../images/divider.svg), url(../images/background-images.jpg);
+  background-image: url(../images/divider.svg), url(../images/background-new.png.);
   padding-top: 51px;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -347,7 +347,15 @@ body {
   list-style: none;
 }
 
-.subscribe-form {}
+.subscribe-form {
+  background-image: url(../images/divider.svg), url(../images/subscribe.png);
+  padding-top: 51px;
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, left top;
+  width: 1200px;
+  height: 406px;
+}
 
 .subscribe-form-name {
   margin: 0;
