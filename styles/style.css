@@ -18,6 +18,8 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
   background: #f2f2f2;
 }
@@ -133,7 +135,7 @@ body {
   background-position: left bottom, left top;
   width: 1200px;
   height: 485px;
-}
+  }
 
 /*Приглашение посетить туристический город*/
 .visually-hidden {
