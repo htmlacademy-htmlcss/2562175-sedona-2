@@ -18,10 +18,22 @@ body {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #000000;
   background: #f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .conteiner {
@@ -31,125 +43,125 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-.header {}
+.header {
+  position: relative;
+}
 
-.logo-link {}
+.logo-link {
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
 
-.nav {}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 238px;
+  padding-right: 70px;
+  align-items: flex-start;
+}
 
 .main-menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
 }
 
 .menu-item {}
 
-/*Главная*/
-.menu-link {}
-
-.menu-item {}
-
-/*О Седоне*/
-.menu-link {}
-
-.menu-item {}
-
-/*Гостиницы*/
-.menu-link {}
+.menu-link {
+  display: block;
+  padding: 20px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
 
 .user-menu {
   margin: 0;
-  padding: 0;
+  padding: 14px 0 13px;
   list-style: none;
+  display: flex;
+  align-items: flex-start;
+  width: 350px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  row-gap: 10px;
 }
 
-.user-menu-item {}
-
-.user-menu-link {}
-
-/*Поиск по сайту*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.loupa {
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
-.user-menu-item {}
-
-.user-menu-link {}
-
-/*Избранное*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.favourite {
+  width: 44px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
 }
 
-/*12*/
-.fav-namber {}
-
-.user-menu-item {}
-
-/*Хочу сюда!*/
-.user-menu-link {}
-
-.main-index {}
-
-/*Неофициальный сайт города Седона*/
-.visually-hidden {
+.fav-number {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  top: -3px;
+  right: 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+
+.wish {
+  display: block;
+  min-width: 160px;
+  padding: 8px 7px;
+  background: #756157;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-left: 20px;
 }
 
 .welcome {
-  background-image: url(../images/divider.svg), url(../images/background-new.png.);
+  background-color: #79909e;
+  background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   padding-top: 51px;
+  padding-bottom: 82px;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
   width: 1200px;
-  height: 485px;
-  }
-
-/*Приглашение посетить туристический город*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  min-height: 485px;
+  box-sizing: border-box;
 }
 
 .welcome-image {
@@ -159,33 +171,11 @@ body {
 
 .advanteges {}
 
-/*Причины посетить город*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/*Седона-небольшой городок в Аризоне, заслуживающий большего*/
 .advanteges-text {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-/*Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!*/
-.advanteges-text {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  text-align: center;
 }
 
 .advanteges-list {
@@ -196,85 +186,32 @@ body {
 
 .advanteges-item advanteges-item-wide {}
 
-/*Настоящий городок*/
 .advanteges-title {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
-/*Седона — не аттракцион для туристов, там течёт своя жизнь*/
 .advanteges-discription {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 .advanteges-img {}
 
 .advanteges-item {}
-
-/*Небольшая площадь*/
-.advanteges-title {}
-
-/*Все достопримечательности находятся очень близко*/
-.advanteges-discription {}
-
-.advanteges-item {}
-
-/*Красивая дорога*/
-.advanteges-title {}
-
-/*Ехать в Седону из Лас-Вегаса совсем не скучно!*/
-.advanteges-discription {}
-
-.advanteges-item {}
-
-/*Мало туристов*/
-.advanteges-title {}
-
-/*Большинство едет в Гранд Каньон и толпится там*/
-.advanteges-discription {}
-
-.advanteges-item advanteges-item-wide {}
-
-/*Там есть мост дьявола*/
-.advanteges-title {}
-
-/*Да, по нему можно пройти! Если вы осмелитесь, разумеется*/
-.advanteges-discription {}
-
-.advanteges-img {}
 
 .infrastructure {}
 
-/*Инфраструктура*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-/*Приезжайте в Седону отдохнуть в комфорте и уюте!*/
 .infrastructure-lead {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-/*Опытный персонал и качественное обслуживание!*/
-.infrastructure-lead {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  text-align: center;
 }
 
 .infrastructure-list {
@@ -290,29 +227,15 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
-/*Рекомендуем пожить в настоящем мотеле, всё как в кино!*/
 .infrastructure-description {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
-
-.infrastructure-item {}
-
-/*Еда*/
-.infrastructure-title {}
-
-.infrastructure-description {}
-
-.infrastructure-item {}
-
-/*Сувениры*/
-.infrastructure-title {}
-
-/*Не только китайского, но и настоящего местного производства!*/
-.infrastructure-description {}
 
 .search {}
 
@@ -321,17 +244,33 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
-/*Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне*/
 .search-description {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 
 /*ПОИСК ГОСТИНИЦЫ В СЕДОНЕ*/
-.search-button {}
+.search-button {
+  display: block;
+  min-width: 376px;
+  padding: 8px 7px;
+  background: #756157;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
 
 .subscribe subscribe-theme-custom {}
 
@@ -340,17 +279,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-/*Только полезная информация и никакого спама, честное бойскаутское!*/
-.subscribe-title {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  text-align: center;
 }
 
 .subscribe-form {
-  background-image: url(../images/divider.svg), url(../images/subscribe.png);
+  background-image: url(../images/subscribe.jpg);
   padding-top: 51px;
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -363,21 +296,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-/*Ваш e-mail*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*Подписаться*/
@@ -394,59 +312,6 @@ footer {}
 .footer-social-item {}
 
 .footer-social-link {}
-
-/*ВКонтакте*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.footer-social-item {}
-
-.footer-social-link {}
-
-/*Telegram*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.footer-social-item {}
-
-.footer-social-link {}
-
-/*YouTube*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .footer-phone {}
 
