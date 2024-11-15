@@ -176,13 +176,14 @@ body {
   margin: 0 auto;
 }
 
-.advanteges {}
+.advanteges{}
 
 .advanteges-text {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
+  display: block;
 }
 
 .advanteges-list {
@@ -191,7 +192,9 @@ body {
   list-style: none;
 }
 
-.advanteges-item advanteges-item-wide {}
+.advanteges-item advanteges-item-wide {
+
+}
 
 .advanteges-title {
   margin: 0;
@@ -205,11 +208,28 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
-}
+  }
 
 .advanteges-img {}
 
-.advanteges-item {}
+
+ /* background-color: #82b3d3;
+  color: black;
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+  box-sizing: border-box;
+  flex-grow: 1;
+*/
+
+.advanteges-item {
+  width: 400px;
+  min-height: 385px;
+  box-sizing: border-box;
+  padding: 180px 85px 0;
+  }
+
+
 
 .infrastructure {}
 
@@ -225,9 +245,16 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.infrastructure-item {}
+.infrastructure-item {
+  width: 400px;
+  min-height: 385px;
+  box-sizing: border-box;
+  padding: 180px 85px 0;
+}
 
 /*Жильё*/
 .infrastructure-title {
@@ -265,21 +292,24 @@ body {
 .search-button {
   display: block;
   min-width: 376px;
-  padding: 8px 7px;
+  padding: 8px 20px;
   background: #756157;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 36px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-left: 20px;
+  margin: 0 auto 96px;
+  width: 376px;
 }
 
 .subscribe subscribe-theme-custom {}
+
+
 
 /*ПОДПИШИСЬ НА РАССЫЛКУ*/
 .subscribe-title {
@@ -297,6 +327,7 @@ body {
   background-position: left bottom, left top;
   width: 1200px;
   height: 406px;
+  display: flex;
 }
 
 .subscribe-form-name {
@@ -320,7 +351,9 @@ footer {}
 
 .footer-social-link {}
 
-.footer-phone {}
+.footer-phone {
+
+}
 
 .copyright {}
 
