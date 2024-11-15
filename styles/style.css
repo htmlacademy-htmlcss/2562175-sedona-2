@@ -176,44 +176,62 @@ body {
   margin: 0 auto;
 }
 
-.advanteges{}
+.advantages {
+  padding-top: 68px;
+}
 
-.advanteges-text {
+.advantages-caption {
+  margin: 0 auto 26px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 620px;
+
+  background-color: #756157;
+}
+
+.advantages-text {
+  margin: 0 auto 90px;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+
+  width: 700px;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.advantages-title {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
-  display: block;
 }
 
-.advanteges-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.advanteges-item advanteges-item-wide {
-
-}
-
-.advanteges-title {
+.advantages-discription {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
 
-.advanteges-discription {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  }
-
-.advanteges-img {}
+.advantages-img {}
 
 
- /* background-color: #82b3d3;
+/* background-color: #82b3d3;
   color: black;
   width: 400px;
   min-height: 385px;
@@ -222,13 +240,25 @@ body {
   flex-grow: 1;
 */
 
-.advanteges-item {
-  width: 400px;
+.advantages-item {
   min-height: 385px;
   box-sizing: border-box;
-  padding: 180px 85px 0;
-  }
+  display: flex;
+  background-color: red;
+}
 
+.advantages-item:nth-child(2n) {
+  background-color: violet;
+}
+
+.advantages-container {
+  width: 400px;
+}
+
+.advantages-item-wide .advantages-container {
+  background-color: #000000;
+  color: #ffffff;
+}
 
 
 .infrastructure {}
@@ -246,7 +276,7 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
 .infrastructure-item {
@@ -254,6 +284,12 @@ body {
   min-height: 385px;
   box-sizing: border-box;
   padding: 180px 85px 0;
+
+  background-color: aqua;
+}
+
+.infrastructure-item:nth-child(2n) {
+  background-color: aquamarine;
 }
 
 /*Жильё*/
@@ -351,9 +387,7 @@ footer {}
 
 .footer-social-link {}
 
-.footer-phone {
-
-}
+.footer-phone {}
 
 .copyright {}
 
