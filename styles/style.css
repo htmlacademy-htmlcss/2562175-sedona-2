@@ -189,8 +189,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 620px;
-
-  background-color: #756157;
+  background-color: white;
 }
 
 .advantages-text {
@@ -218,7 +217,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages-discription {
@@ -226,49 +229,62 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-img {}
 
 
-/* background-color: #82b3d3;
-  color: black;
-  width: 400px;
-  min-height: 385px;
-  display: flex;
-  box-sizing: border-box;
-  flex-grow: 1;
-*/
-
 .advantages-item {
   min-height: 385px;
   box-sizing: border-box;
   display: flex;
-  background-color: red;
+  background-color: white;
 }
 
 .advantages-item:nth-child(2n) {
-  background-color: violet;
+  background-color: white;
 }
 
 .advantages-container {
   width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .advantages-item-wide .advantages-container {
-  background-color: #000000;
+  background-color: #82b3d3;
   color: #ffffff;
 }
 
+.infrastructure {
+  padding-top: 64px;
+}
 
-.infrastructure {}
-
+.infrastructure-caption {
+  margin: 0 auto 20px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 505px;
+  background-color: white;
+}
 
 .infrastructure-lead {
-  margin: 0;
+  margin: 0 auto 90px;
   padding: 0;
-  list-style: none;
   text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  width: 490px;
 }
 
 .infrastructure-list {
@@ -283,13 +299,12 @@ body {
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
-  padding: 180px 85px 0;
-
-  background-color: aqua;
+  padding: 81px 85px;
+  background-color: white;
 }
 
 .infrastructure-item:nth-child(2n) {
-  background-color: aquamarine;
+  background-color: white;
 }
 
 /*Жильё*/
@@ -298,6 +313,10 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .infrastructure-description {
@@ -305,30 +324,48 @@ body {
   padding: 0;
   list-style: none;
   text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+
 }
 
-.search {}
+.search {
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 86px;
+  width: 592px;
+  margin: 0 auto;
+}
 
 /*Заинтересовались?*/
 .search-title {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding: 80px;
+  padding-bottom: 20px;
   text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .search-description {
   margin: 0;
-  padding: 0;
+  padding-bottom: 43px;
   list-style: none;
   text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  display: block;
 }
 
 /*ПОИСК ГОСТИНИЦЫ В СЕДОНЕ*/
 .search-button {
   display: block;
   min-width: 376px;
-  padding: 8px 20px;
+  padding: 10px 20px;
   background: #756157;
   border-radius: 4px;
   font-size: 20px;
@@ -339,12 +376,29 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin: 0 auto 96px;
+  margin: 8px auto 96px;
   width: 376px;
 }
 
-.subscribe subscribe-theme-custom {}
-
+.subscribe subscribe-theme-custom {
+  /*background-color: #8babb8;
+  background-image: url(../images/subscribe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fffff;
+  text-align: center;*/
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 86px;
+  width: 592px;
+  margin: 0 auto;
+}
+/*.subscribe-container{
+  width: 684px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}*/
 
 
 /*ПОДПИШИСЬ НА РАССЫЛКУ*/
@@ -352,7 +406,22 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  margin: 0;
+  padding: 0;
+
 }
 
 .subscribe-form {
