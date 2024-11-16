@@ -393,6 +393,7 @@ body {
   width: 592px;
   margin: 0 auto;
 }
+
 /*.subscribe-container{
   width: 684px;
   display: flex;
@@ -456,7 +457,13 @@ footer {}
 
 .footer-social-link {}
 
-.footer-phone {}
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+ }
 
 .copyright {}
 
