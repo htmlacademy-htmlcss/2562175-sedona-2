@@ -368,7 +368,7 @@ body {
 
 .search-title {
   margin: 0;
-  padding: 80px;
+  padding: 70px;
   padding-bottom: 20px;
   text-align: center;
   font-size: 30px;
@@ -391,7 +391,7 @@ body {
 .search-button {
   display: block;
   min-width: 376px;
-  padding: 10px 20px;
+  padding: 9px 20px;
   background: #756157;
   border-radius: 4px;
   font-size: 20px;
@@ -402,7 +402,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin: 8px auto 96px;
+  margin: 8px auto 10px;
   width: 376px;
 }
 
@@ -484,21 +484,34 @@ body {
   font-family: inherit;
 }
 
-footer {}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 46px;
+  align-items: flex-start;
+}
 
 .footer-social-list {
   display: flex;
   margin: 0 auto;
-  margin-top: 44px;
+  margin-top: 10px;
   padding: 0;
   list-style: none;
-  width: 145px;
+  width: 142px;
   flex-wrap: wrap;
 }
 
-.footer-social-item {}
+.footer-social-item {
+  width: 47px;
+  height: 40px;
+}
 
-.footer-social-link {}
+.footer-social-link {
+position: relative;
+
+}
 
 .footer-phone {
   font-size: 40px;
