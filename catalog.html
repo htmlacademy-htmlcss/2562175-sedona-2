@@ -115,48 +115,90 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group range-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="filter-range-control">от <input type="text" name="min interval" value="0"></label>
-              <label class="filter-range-control">до <input type="text" name="max interval" value="9000"></label>
-              <button class="filter-range-hendle min" type="button">
-                <span class="visually-hidden">Управление нижней границей стоимости</span>
-              </button>
-              <button class="filter-toggle-hendle max" type="button">
-                <span class="visually-hidden">Управление верхней границей стоимости</span>
-              </button>
+              <div class="price-container">
+                <label class="filter-range-control from" for="min">от</label>
+                <input type="text" name="min-interval" class="limit min" value="0" id="min">
+                <label class="filter-range-control to" for="max">до</label>
+                <input type="text" name="max-interval" class="limit max" value="9000" id="max">
+              </div>
+              <div class="range-container">
+                <div class="range-scale">
+                  <div class="range"></div>
+                </div>
+                <button class="filter-range-handle handle-min" type="button">
+                  <span class="visually-hidden">Управление нижней границей стоимости</span>
+                </button>
+                <button class="filter-range-handle handle-max" type="button">
+                  <span class="visually-hidden">Управление верхней границей стоимости</span>
+                </button>
+              </div>
+
             </fieldset>
-            <div class="controls">
-              <button class="catalog-filter-submit" type="submit">Применить</button>
-              <button class="catalog-filter-reset" type="reset">Сбросить</button>
+            <div class="submit-controls">
+              <button class="filter-submit-controls catalog-filter-submit" type="submit">Применить</button>
+              <button class="filter-submit-controls catalog-filter-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
       </header>
       <section class="catalog-products" data-test="catalog">
-        <h2 class="catalog-products-title">Найдено гостиниц: <span>38</span></h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular" selected>Сначала популярные</option>
-          <option value="cheap" selected>Сначала дешевые</option>
-          <option value="expensive" selected>Сначала дорогие</option>
-        </select>
-        <ul class="view-buttons">
-          <li class="view-buttons-item">
-            <a class="view-buttons-tile" href="#">
-              <span class="visually-hidden">Показать плиткой</span>
-            </a>
-          </li>
-          <li class="view-buttons-item">
-            <a class="view-buttons-card" href="#">
-              <span class="visually-hidden">Показать карточками</span>
-            </a>
-          </li>
-          <li class="view-buttons-item">
-            <a class="view-buttons-list" href="#">
-              <span class="visually-hidden">Показать списком</span>
-            </a>
-          </li>
-        </ul>
+        <div class="choice">
+          <h2 class="catalog-products-title">Найдено гостиниц: <span>38</span></h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular" selected>Сначала популярные</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <div class="viewing">
+            <ul class="view-buttons">
+              <li class="view-buttons-item">
+                <a class="view-buttons-tile" href="#">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    fill="none" viewBox="0 0 16 14">
+                    <path fill="#000"
+                      d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                  </svg>
+                  <span class="visually-hidden">Показать плиткой</span>
+                </a>
+              </li>
+              <li class="view-buttons-item">
+                <a class="view-buttons-card" href="#">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    fill="none" viewBox="0 0 16 14">
+                    <g fill="#000" clip-path="url(#a)">
+                      <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="visually-hidden">Показать карточками</span>
+                </a>
+              </li>
+              <li class="view-buttons-item">
+                <a class="view-buttons-list" href="#">
+                  <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    fill="none" viewBox="0 0 16 14">
+                    <g fill="#000" clip-path="url(#a)">
+                      <path
+                        d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                    </g>
+                    <defs>
+                      <clipPath id="a">
+                        <path fill="#fff" d="M0 0h16v14H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-card-link" href="#">
