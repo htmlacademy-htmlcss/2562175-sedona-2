@@ -130,7 +130,7 @@
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
           гостиниц в Седоне</p>
-        <a class="search-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class="search-link search-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="subscribe subscribe-index" data-test="subscribe">
         <div class="subscribe-container">
@@ -198,20 +198,37 @@
     </footer>
   </div>
 
-  <div class="modal-container hidden">
+  <div class="modal-container hidden1">
     <div class="modal modal-auth">
-      <button class="modal-close-button">
+      <button class="modal-close-button" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" class="form-modal">
+          <div class="modal-row">
+            <label for="" class="modal-label">Дата заезда:</label>
+            <div class="modal-block">
+              <input type="text" class="modal-input" value="27 апреля 2020" placeholder="Укажите дату заезда">
+              <p class="modal-message error">Мы не можем отправить вас в прошлое.</p>
+            </div>
+          </div>
+          <div class="modal-row">
+            <label for="" class="modal-label">Дата выезда:</label>
+            <div class="modal-block">
+              <input type="text" class="modal-input" value="1 сентября 2023" placeholder="Укажите дату выезда">
+              <p class="modal-message">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+          </div>
 
+        </form>
 
 
 
       </section>
     </div>
   </div>
+  <script src="./scripts/script.js"></script>
 </body>
 
 </html>
