@@ -129,7 +129,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .favourite {
@@ -139,7 +139,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .fav-number {
@@ -155,7 +155,7 @@ body {
   min-width: 20px;
   height: 20px;
   border-radius: 10px;
-  background: green;
+  background: #7db54f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +211,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 620px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .advantages-text {
@@ -261,11 +261,11 @@ body {
   min-height: 385px;
   box-sizing: border-box;
   display: flex;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .advantages-item:nth-child(2n) {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .advantages-container {
@@ -294,7 +294,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   width: 505px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .infrastructure-lead {
@@ -325,7 +325,7 @@ body {
 }
 
 .infrastructure-item:nth-child(2n) {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .infrastructure-title {
@@ -548,6 +548,8 @@ footer {
   background-color: hsla(0, 0%, 95%, 0.8);
   justify-content: center;
   align-items: center;
+
+  align-items: flex-start;
 }
 
 .modal {
@@ -564,11 +566,6 @@ footer {
   display: none;
 }
 
-/*.modal-auth {
-  width: 717px;
-  height: 576px;
-}*/
-
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -576,17 +573,18 @@ footer {
   right: 52px;
   width: 52px;
   height: 52px;
-  background-color: #ffffff;
   border: none;
-  /*background-color: url("../images/close.svg");*/
+  background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  background-color: #f2f2f2;
+  border-radius: 50%;
 }
 
 .modal-title {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 66px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -595,7 +593,55 @@ footer {
   text-transform: uppercase;
 }
 
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
 
+.modal-label {
+  width: 125px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-top: 11px;
+  text-transform: capitalize;
+}
+
+.modal-block {
+  width: 440px;
+  min-height: 73px;
+}
+
+.modal-input {
+  width: 440px;
+  height: 48px;
+  display: block;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  padding: 0 57px 0 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  background: #f2f2f2 url("../images/date.svg") no-repeat right 20px top 14px;
+}
+
+.modal-message {
+  padding: 4px 0 0 21px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.error {
+  color: #ff0000;
+}
 
 
 /*КАТАЛОГ*/
@@ -715,7 +761,7 @@ footer {
   color: #ffffff;
 }
 
-[type="checkbox"]+.control::before {
+[type="checkbox"] + .control::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -726,7 +772,7 @@ footer {
   position: absolute;
 }
 
-[type="checkbox"]+.control::after {
+[type="checkbox"] + .control::after {
   content: "";
   width: 12px;
   height: 10px;
@@ -737,7 +783,7 @@ footer {
   display: none;
 }
 
-[type="radio"]+.control::before {
+[type="radio"] + .control::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -748,7 +794,7 @@ footer {
   position: absolute;
 }
 
-[type="radio"]+.control::after {
+[type="radio"] + .control::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -760,7 +806,7 @@ footer {
   border-radius: 50%;
 }
 
-.control-input:checked+.control::after {
+.control-input:checked + .control::after {
   display: block;
 }
 
@@ -906,7 +952,7 @@ footer {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  border: 2px solid white;
+  border: 2px solid #e5e5e5;
   box-sizing: border-box;
   border-radius: 4px;
   padding: 0 44px 0 19px;
@@ -940,20 +986,25 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
+.view-button-active {
+  border-color: #000000
+}
+
 .view-button:hover {
-  border: 1px solid #000000;
+  border-color: #000000;
 }
 
 .view-button:focus {
-  border: 1px solid #68a2ca
+  border-color: #68a2ca;
+  outline: none;
 }
 
 .view-button:active {
-  border: 2px solid #000000
+  border-color: #000000;
 }
 
 .view-buttons-card {}
@@ -961,11 +1012,12 @@ footer {
 .view-buttons-list {}
 
 .product-list {
-  margin: 0 69px 40px;
-  padding: 0;
+  margin: 0 69px 39px;
+  padding: 0 0 43px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   gap: 20px;
+  border-bottom: 1px solid #e6e6e6;
   list-style: none;
 }
 
@@ -973,7 +1025,7 @@ footer {
   width: 340px;
   box-sizing: border-box;
   padding: 19px;
-  border: 1px solid white;
+  border: 1px solid #ffffff;
   border-radius: 4px;
 }
 
@@ -1018,7 +1070,6 @@ footer {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
-
 }
 
 .product-card-price {
@@ -1075,7 +1126,7 @@ footer {
 }
 
 .pagination {
-  margin: 0;
+  margin: 0 70px 60px;
   padding: 0;
   display: flex;
   list-style-type: none;
@@ -1089,11 +1140,15 @@ footer {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: wheat;
-  font-weight: 700;
+  color: #ffffff;
   background-color: #82b3d3;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .pagination-link:hover {
@@ -1102,11 +1157,37 @@ footer {
 
 .pagination-link:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .pagination-current {
-  background-color: white;
-  color: black;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.pagination-current:hover {
+  background-color: #f2f2f2;
+}
+
+.pagination-current:focus {
+  background-color: #f2f2f2;
+  outline: none;
+}
+
+.pagination-more {
+  background-color: transparent;
+  color: #000000;
+}
+
+.pagination-more:hover {
+  background-color: transparent;
+  color: #756157;
+}
+
+.pagination-more:focus {
+  background-color: transparent;
+  color: #756157;
+  outline: none;
 }
 
 .pagination-text {}
