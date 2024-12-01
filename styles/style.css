@@ -148,7 +148,7 @@ body {
   row-gap: 10px;
 }
 
-.loupa {
+.menu-search {
   width: 44px;
   height: 36px;
   display: flex;
@@ -158,16 +158,16 @@ body {
   color: #000000;
 }
 
-.loupa:hover {
+.menu-search:hover {
   color: #756157;
 }
 
-.loupa:focus {
+.menu-search:focus {
   outline: none;
   color: #756157;
 }
 
-.loupa:active {
+.menu-search:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
@@ -525,6 +525,7 @@ body {
 }
 
 .subscribe-index {
+  background-color: #acacc5;
   background-size: cover;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
