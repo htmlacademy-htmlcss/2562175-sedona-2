@@ -525,7 +525,7 @@ body {
 }
 
 .subscribe-index {
-  background-color: #acacc5;
+  background-color: #79909e;
   background-size: cover;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
@@ -983,7 +983,7 @@ body {
   display: block
 }
 
-.tooltip-button:focus+.tooltip-wrapper {
+.tooltip-button:focus + .tooltip-wrapper {
   display: block
 }
 
@@ -1173,7 +1173,7 @@ body {
   opacity: 0.6;
 }
 
-.control-input:focus+.control::before {
+.control-input:focus + .control::before {
   outline: 3px solid #83b3d3;
 }
 
@@ -1182,7 +1182,7 @@ body {
   opacity: 30%;
 }
 
-[type="checkbox"]+.control::before {
+[type="checkbox"] + .control::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -1193,7 +1193,7 @@ body {
   position: absolute;
 }
 
-[type="checkbox"]+.control::after {
+[type="checkbox"] + .control::after {
   content: "";
   width: 12px;
   height: 10px;
@@ -1204,7 +1204,7 @@ body {
   display: none;
 }
 
-[type="radio"]+.control::before {
+[type="radio"] + .control::before {
   content: "";
   width: 20px;
   height: 20px;
@@ -1215,7 +1215,7 @@ body {
   position: absolute;
 }
 
-[type="radio"]+.control::after {
+[type="radio"] + .control::after {
   content: "";
   width: 10px;
   height: 10px;
@@ -1227,7 +1227,7 @@ body {
   border-radius: 50%;
 }
 
-.control-input:checked+.control::after {
+.control-input:checked + .control::after {
   display: block;
 }
 
